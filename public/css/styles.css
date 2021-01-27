@@ -1,0 +1,38 @@
+
+body{
+    text-align: center;
+    }
+    
+    /* sign */
+    .sign-heading{
+        margin-top:5rem;
+        margin-bottom: 5rem;
+    }
+    .sign{
+        text-align: left;
+        display: inline-block;
+        width:50%;
+    }
+    
+    /* diary*/
+    
+    .heading-diary{
+    margin-top: 3rem;
+    }
+    
+    .add-entry-button{
+        margin-top:3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .list-of-entries{
+        display:inline-block;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        width:50%;
+    }
+    
+    /* write */
+    
+    /*entry*/
+    

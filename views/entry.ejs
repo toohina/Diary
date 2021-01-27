@@ -1,0 +1,20 @@
+<%-include("partials/header.ejs")%>
+  <div class="m-5">
+    <h1><%=entry.title%></h1>
+  </div>
+   <div class="m-5">
+       <p><%=entry.body%></p>
+   </div>
+   <form action="/edit/<%=username%>/<%=entry.id%>" method="GET">
+    <div class="d-grid gap-2 col-6 mx-auto mb-3">
+      <button type="submit" class="btn btn-primary">Edit</button>
+    </div>
+  </form>
+  <form action="/delete" method="POST"> 
+    <input type="hidden" name="username" value="<%=username%>"> 
+    <input type="hidden" name="id" value="<%=entry.id%>">
+    <div class="d-grid gap-2 col-6 mx-auto mb-3">
+      <button type="submit" class="btn btn-primary">Delete</button>
+    </div>
+  </form>
+ <%-include("partials/footer.ejs")%>
