@@ -1,14 +1,16 @@
-<%- include("partials/header.ejs") %> 
-<form action="/write" method="POST">
-<div class="form-floating m-5">
-    <input type="text" name="title" class="form-control" id="floatingInputValue" placeholder="">
-    <label for="floatingInputValue">Title</label>
-  </div>
-<div class="form-floating m-5">
-    <textarea  name="body" class="form-control" placeholder="" id="floatingTextarea2" style="height:400px"></textarea>
-    <label for="floatingTextarea2">Body</label>
-</div>
-<input type="hidden" name="username" value="<%=username%>">
-<div class="d-grid gap-2 col-6 mx-auto"><button type="submit" class="btn btn-primary">Save</button></div>
-</form>
-<%- include("partials/footer.ejs") %> 
+<%- include("partials/header.ejs") %>
+    <div class="container">
+        <form action="/write" method="POST">
+            <div class="form-floating m-5">
+                <input type="text" name="title" class="form-control" id="floatingInputValue" placeholder="">
+                <label for="floatingInputValue">Title</label>
+            </div>
+            <div class="form-floating m-5">
+                <textarea name="body" class="form-control" placeholder="" id="floatingTextarea2" style="height:400px"></textarea>
+                <label for="floatingTextarea2">Body</label>
+            </div>
+            <input type="hidden" name="username" value="<%=username%>">
+            <div class="d-grid gap-2 col-6 mx-auto"><button type="submit" class="btn btn-warning">Save</button></div>
+        </form>
+    </div>
+    <%- include("partials/footer.ejs") %>

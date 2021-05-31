@@ -1,20 +1,24 @@
 <%-include("partials/header.ejs")%>
-<div class="sign-heading"><h1>Login</h1></div>
-<div class="sign">
-  <form action="/login" method="POST" class="needs-validation" novalidate>
-    <div class="mb-3">
-      <label for="InputUsername" class="form-label">Username</label>
-      <input type="text" class="form-control is-invalid" id="InputUsername" name="username" required>
-      <div class="invalid-feedback">
-        Wrong username and passowrd.
-      </div>
+    <div class="container">
+        <div class="sign-heading">
+            <h1>Login</h1>
+        </div>
+        <div class="sign">
+            <form action="/login" method="POST" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="InputUsername" class="form-label">Username</label>
+                    <input type="text" class="form-control is-invalid" id="InputUsername" name="username" required>
+                    <div class="invalid-feedback">
+                        Wrong username and passowrd.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="InputPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="InputPassword" name="password" required>
+                </div>
+                <div class="pb-3"></div>
+                <button type="submit" class="btn btn-warning">Register</button>
+            </form>
+        </div>
     </div>
-    <div class="mb-3">
-      <label for="InputPassword" class="form-label" >Password</label>
-      <input type="password" class="form-control" id="InputPassword" name="password" required>
-    </div>
-    <div class="pb-3"></div>
-    <button type="submit" class="btn btn-primary">Register</button>
-  </form>
-</div>
-<%-include("partials/footer.ejs")%>
+    <%-include("partials/footer.ejs")%>
